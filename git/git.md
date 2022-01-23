@@ -84,7 +84,7 @@
 Some Tips: https://docs.plone.org/develop/coredev/docs/git.html#making-commits
 
 ### Git Cheat Sheet
-![Git cheat sheet](./images/1.git-cheat-sheet.pdf)
+![Git cheat sheet](./1.git-cheat-sheet.pdf)
 
 ### Git File States
-![Git file status](./images/2.file-states.png)
+![Git file status](./2.file-states.png)
