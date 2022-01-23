@@ -9,7 +9,7 @@
 | Basic | Clone a repository                    | `$ git clone https://github.com/libgit2/libgit2` |
 | Basic | Check status of files                 | `$ git status [-S:Simplified]`                   |
 | Basic | Check change differences not prepated | `$ git diff`                                     |
-| Basic | Check change differences in stage     | `$ git diff --staged | --cached`                 |
+| Basic | Check change differences in stage     | `$ git diff --staged`                            |
 
 
 ## Configuration commands
