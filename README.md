@@ -1,5 +1,6 @@
 # cheatsheets
-Repo to group most commons commands of different tech stacks
+Repo to group most common commands of different tech stacks
 
-- [Golang Cheatsheet](./git/README.md)
+- [Git Cheatsheet](./git/README.md)
 - [Bash Cheatsheet](bash.md)
+- [Go Cheatsheet](go.md)

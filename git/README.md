@@ -1,16 +1,16 @@
 # Git commands
 
 ## Git Basics
-| Type  | Description                           | Command                                          |
-| ----- | ------------------------------------- | ------------------------------------------------ |
-| Basic | Start a git repository                | `$ git init`                                     |
-| Basic | Includes a file in stage              | `$ git add <FILE>`                               |
-| Basic | Inclides files in state to git base   | `$ git commit -m <MESSAGE>`                      |
-| Basic | Clone a repository                    | `$ git clone https://github.com/libgit2/libgit2` |
-| Basic | Check status of files                 | `$ git status [-S:Simplified]`                   |
-| Basic | Check change differences not prepated | `$ git diff`                                     |
-| Basic | Check change differences in stage     | `$ git diff --staged`                            |
-
+| Type  | Description                                      | Command                                          |
+| ----- | ------------------------------------------------ | ------------------------------------------------ |
+| Basic | Start a git repository                           | `$ git init`                                     |
+| Basic | Includes a file in stage                         | `$ git add <FILE>`                               |
+| Basic | Inclides files in state to git base              | `$ git commit -m <MESSAGE>`                      |
+| Basic | Clone a repository                               | `$ git clone https://github.com/libgit2/libgit2` |
+| Basic | Check status of files                            | `$ git status [-S:Simplified]`                   |
+| Basic | Check change differences not prepated            | `$ git diff`                                     |
+| Basic | Check change differences in stage                | `$ git diff --staged`                            |
+| Basic | Delete all local changes and restart from remote | `$ git reset --hard origin/master`               |
 
 ## Configuration commands
 | Type   | Description                        | Command                                           |
@@ -50,9 +50,10 @@
 ## Commands related with commit handling
 | Type   | Description                                   | Command                                                        |
 | ------ | --------------------------------------------- | -------------------------------------------------------------- |
-| Commit | Basic interactive rebase                      | `$ git rebase -i -p 0ad14fa5`                                  |
+| Commit | Basic interactive rebase                      | `$ git rebase -i 0ad14fa5`                                     |
+| Commit | To rebase including the first commit          | `$ git rebase -i --root`                                       |
 | Commit | Change last commit author                     | `$ git commit --amend --author="Hernan <NEW EMAIL>" --no-edit` |
-| Commit | To revert a rebase already pushed             | `$ $ git reflog <branch>` -> `$ git push -f`                   |
+| Commit | To revert a rebase already pushed             | `$ git reflog <branch>` -> THEN -> `$ git push -f`             |
 | Commit | To Solve problem when new repos have problems | `$ git pull origin branchname --allow-unrelated-histories`     |
 
 ## Commands related with submodules
