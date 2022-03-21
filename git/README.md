@@ -1,4 +1,5 @@
 # Git commands
+For sure there are a lot of additional `git` commands, weird configurations, or more robust cheat sheets everywhere but this is my own compilation, these are most of the commands I've required on a daily basis organized and with a description easy to understand for future reference.
 
 ## Git Basics
 | Type  | Description                                      | Command                                          |
@@ -85,8 +86,8 @@
 Some Tips: https://docs.plone.org/develop/coredev/docs/git.html#making-commits
 
 ### Git Cheat Sheet
-![Git cheat sheet](./1.git-cheat-sheet.png)
-[Git cheat sheet](./1.git-cheat-sheet.pdf)
+![Git cheat sheet](images/1.git-cheat-sheet.png)
+[Git cheat sheet](images/1.git-cheat-sheet.pdf)
 
 ### Git File States
-![Git file status](./2.file-states.png)
+![Git file status](images/2.file-states.png)
