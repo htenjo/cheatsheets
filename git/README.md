@@ -1,5 +1,5 @@
 # Git commands
-For sure there are a lot of additional `git` commands, weird configurations, or more robust cheat sheets everywhere but this is my own compilation, these are most of the commands I've required on a daily basis organized and with a description easy to understand for future reference.
+For sure there are a lot of additional `git` commands, weird configurations or more robust cheat sheets everywhere but this one works for me. These are the commands I've required on a daily basis, organized, with natural descriptions and easy to understand for future reference.
 
 ## Git Basics
 | Type  | Description                                      | Command                                          |
