@@ -68,6 +68,15 @@ For sure there are a lot of additional `git` commands, weird configurations or m
   1. `$ git commit --amend --author="<NAME> <EMAIL>" --no-edit`
   1. `$ git rebase --continue`
   1. `$ git stash save YOUR_MESSAGE`  
+
+- To change the whole history of author and names:
+  ``` bash
+  $ git config alias.change-commits '!'"f() { VAR=\$1; OLD=\$2; NEW=\$3; shift 3; git filter-branch --env-filter \"if [[ \\\"\$\`echo \$VAR\`\\\" = '\$OLD' ]]; then export \$VAR='\$NEW'; fi\" \$@; }; f "
+  $ git change-commits GIT_AUTHOR_NAME "<Old Name>" "<New Name>" -f
+  $ git change-commits GIT_AUTHOR_EMAIL <old@email.com> <new@email.com> -f
+  $ git change-commits GIT_COMMITTER_NAME "<Old Name>" "<New Name>" -f
+  $ git change-commits GIT_COMMITTER_EMAIL <old@email.com> <new@email.com> -f
+  ```
    
 - Delete all local branches not present on remote  
      `$ git branch --merged | grep -v "master" | grep -v "develop" > /tmp/merged-branches && vi /tmp/merged-branches && xargs git branch -d < /tmp/merged-branches`
