@@ -69,7 +69,7 @@ For sure there are a lot of additional `git` commands, weird configurations or m
   1. `$ git rebase --continue`
   1. `$ git stash save YOUR_MESSAGE`  
 
-- To change the whole history of author and names:
+- To change the whole history of author names and emails:
   ``` bash
   $ git config alias.change-commits '!'"f() { VAR=\$1; OLD=\$2; NEW=\$3; shift 3; git filter-branch --env-filter \"if [[ \\\"\$\`echo \$VAR\`\\\" = '\$OLD' ]]; then export \$VAR='\$NEW'; fi\" \$@; }; f "
   $ git change-commits GIT_AUTHOR_NAME "<Old Name>" "<New Name>" -f
